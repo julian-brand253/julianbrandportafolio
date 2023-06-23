@@ -20,7 +20,7 @@ html{
     left: 3%;
     margin: auto;
     max-width: 100%;
-    height: 400px;
+    height: 1px;
     object-fit: cover;
     z-index: 1;
     padding: 0;
@@ -31,7 +31,7 @@ html{
     padding: 10px 80px;
     display: block;
     font-family: 'Kanit', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
 }
 .menu li{ 
@@ -199,26 +199,31 @@ html{
     justify-content: center;
     background-color: #1CB698;
     border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 }
+
+.grid-item:hover {
+    background-color: #FF0000; /* Cambia el color a tu preferencia */
+  }
+  
 .grid-item:hover{
-  filter: opacity(0.9);
-  transform: scale(1.04);
+  filter: opacity(5.9);
+  transform: scale(1.07);
 }
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(200px, auto);
     gap: 5px;
     padding: 5px;
     grid-auto-flow: dense;
     background-color: black; 
     }
-.item1{
+.item1 {
     grid-row: span 2;
 }
 
@@ -269,7 +274,7 @@ html{
 .sobremi .fila .col .contenedor-intereses .interes {
     padding: 0;
     width: 550px; 
-    margin-top: -60px;
+    margin-top: -30px;
 }
 .sobremi .fila .col .contenedor-intereses .interes span {
     background-color: #1107118a;
@@ -279,7 +284,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffff;
     padding: 30px;
     font-family: 'Kanit', sans-serif;
